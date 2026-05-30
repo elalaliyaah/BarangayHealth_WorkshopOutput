@@ -34,7 +34,6 @@ Create a .env file
 DB_URL=[url]
 DB_USER=[user]
 DB_PASSWORD=[password]
-
 ```
 The .env file is listed in .gitignore and will not be pushed to GitHub
 
