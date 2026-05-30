@@ -3,7 +3,9 @@
 Molato, Eliyah G.
 
 COMP 009 Object-Oriented Programming
+
 BSIT 2-2
+
 BarangayHealth_WorkshopOutput
 
 Barangay Health Appointment System is a desktop app for managing patient appointments across Medical, Dental, and Vaccination departments.
@@ -21,7 +23,7 @@ Barangay Health Appointment System is a desktop app for managing patient appoint
 
 1. Go to supabase.com and create a project
 2. Go to the SQL Editor
-3. Go to Project Settings, then Database, and copy connection details.
+3. Go to Project Settings, then Database, and copy connection details
 
 ---
 
@@ -29,21 +31,21 @@ Barangay Health Appointment System is a desktop app for managing patient appoint
 
 Create a .env file
 ```
-DB_URL=jdbc:postgresql://db.<your-project-ref>.supabase.co:5432/postgres
-DB_USER=postgres
-DB_PASSWORD=your_supabase_password
-```
+DB_URL=[url]
+DB_USER=[user]
+DB_PASSWORD=[password]
 
-> ⚠️ The `.env` file is listed in `.gitignore` and will NOT be pushed to GitHub.
+```
+The .env file is listed in .gitignore and will not be pushed to GitHub
 
 ---
 
 ## Running the App
 
-1. Open the project in IntelliJ IDEA.
-2. Let Maven download dependencies.
-3. Make sure your `.env` file is in the project root.
-4. Run `Launcher.java` (or use `mvn javafx:run`).
+1. Open the project in IntelliJ IDEA
+2. Let Maven download dependencies
+3. Make sure .env file is in the project root
+4. Run Launcher.java
 
 ---
 
@@ -51,7 +53,7 @@ DB_PASSWORD=your_supabase_password
 
 | Screen | Description |
 |---|---|
-| Welcome | App intro with Enter button |
+| Welcome Page | App introduction with Enter button |
 | Dashboard | Cards showing patient count per department |
 | Add Patient | Form to book a new appointment |
 | View All Patients | Table of all records with delete |
