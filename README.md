@@ -1,42 +1,32 @@
 # Barangay Health Appointment System
 
-A JavaFX desktop app for managing patient appointments across Medical, Dental, and Vaccination departments.
+Molato, Eliyah G.
+COMP 009 Object-Oriented Programming
+BSIT 2-2
+BarangayHealth_WorkshopOutput
+
+Barangay Health Appointment System is a desktop app for managing patient appointments across Medical, Dental, and Vaccination departments.
 
 ---
 
-## Tech Stack
-- Java 21
-- JavaFX 21
-- PostgreSQL via Supabase
-- dotenv-java (for secure credentials)
-- Maven
+## Requirements/Instructions:
+1. Multiple Views
+2. Database connection
+3. Environments stored securely
 
 ---
 
 ## Supabase Setup
 
-1. Go to [supabase.com](https://supabase.com) and create a project.
-2. Go to the **SQL Editor** and run:
-
-```sql
-CREATE TABLE patients (
-  id SERIAL PRIMARY KEY,
-  patient_name TEXT NOT NULL,
-  department TEXT NOT NULL,
-  concern TEXT,
-  date DATE,
-  created_at TIMESTAMP DEFAULT NOW()
-);
-```
-
-3. Go to **Project Settings → Database** and copy your connection details.
+1. Go to supabase.com and create a project
+2. Go to the SQL Editor
+3. Go to Project Settings, then Database, and copy connection details.
 
 ---
 
 ## Environment Variables
 
-Create a `.env` file in the **root of the project** (same folder as `pom.xml`):
-
+Create a .env file
 ```
 DB_URL=jdbc:postgresql://db.<your-project-ref>.supabase.co:5432/postgres
 DB_USER=postgres
